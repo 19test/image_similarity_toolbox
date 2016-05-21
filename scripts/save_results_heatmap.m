@@ -26,8 +26,8 @@ diff = max_val - min_val;
 % normalize so smallest value is zero and max value is 'diff'
 correlation_back = correlation_back - min_val;
 cd ..
+pwd
 file_name = sprintf('%s/results/heatmap-%s.html', img_dir, time_stamp);
-cd scripts
 handle = fopen(file_name, 'w');
 fprintf(handle, 'Higher values indicate a greater similarity');
 fprintf(handle, '<table border=0 cellspacing=0 cellpadding=0><tr cellpadding=0 cellspacing=0>');

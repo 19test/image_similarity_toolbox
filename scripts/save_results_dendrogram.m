@@ -14,8 +14,11 @@ H = figure(1);
 set(figure(1), 'Visible', 'off');
 set(H, 'Position', [0 0 1000 1000]);
 set(figure(1), 'Visible', 'off');
-file_name = sprintf('%s/dendrogram-%s.png', folder_name, time_stamp);
-print(H, file_name, '-dpng'); % save dendrogram as png
+file_name = sprintf('%s/dendrogram-SSE_1454_2013-Jan-04.png');
+% file_name = sprintf('%s/dendrogram-%s.jpg', folder_name, time_stamp);
+% print(H, file_name, '-djpeg'); % save dendrogram as png
+% print(H, '-djpeg', '-r600', file_name);
+
 set(figure(1), 'Visible', 'off');
 %% Read then crop the dendrogram
 I = imread(file_name);
